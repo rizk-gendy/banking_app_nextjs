@@ -124,7 +124,7 @@
   }
 
   .total-balance-chart {
-    @apply flex size-full max-w-[100px] items-center sm:max-w-[120px];
+    @apply  size-full max-w-[100px] items-center sm:max-w-[120px];
   }
 
   .total-balance-label {
@@ -134,7 +134,6 @@
   .total-balance-amount {
     @apply text-24 lg:text-30 flex-1 font-semibold text-gray-900;
   }
-
   .recent-transactions {
     @apply flex w-full flex-col gap-6;
   }
@@ -163,7 +162,7 @@
   .profile-banner {
     @apply h-[120px] w-full bg-gradient-mesh bg-cover bg-no-repeat;
   }
-
+ 
   .profile {
     @apply relative flex px-6 max-xl:justify-center;
   }
