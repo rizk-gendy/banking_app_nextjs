@@ -14,6 +14,7 @@ import { sidebarLinks } from '@/constants/index'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { usePathname } from 'next/navigation'
+import Footer from './Footer'
 
 const MobileNav = ({ user }: MobileNavProps) => {
     const pathName = usePathname()
@@ -42,7 +43,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                         </h1>
                     </Link>
 
-                    <div className='monilenav-sheet'>
+                    <div className='mobilenav-sheet'>
                         <SheetClose asChild >
                             <nav className='flex h-full flex-col gap-6 pt-16 text-white'>
                                 {sidebarLinks.map((link) => {
@@ -69,10 +70,12 @@ const MobileNav = ({ user }: MobileNavProps) => {
                             </nav>
 
                         </SheetClose>
-                         
+                        <Footer type='mobile' user={user}/>
 
                     </div>
+
                 </SheetContent>
+                
             </Sheet>
         </section>
     )
